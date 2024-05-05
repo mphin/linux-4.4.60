@@ -158,6 +158,6 @@ jobs:
           replacesArtifacts: true
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
-            The kernel can be used to compile Armbian and OpenWrt.
-            The kernel source code comes from: ${{ inputs. }}
+            The kernel can be used to compile Armbian and OpenWrt
+            The kernel source code comes from: ${{ inputs }}
             The kernel compilation toolchain: ${{ inputs.kernel_toolchain }}
