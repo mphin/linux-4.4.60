@@ -148,7 +148,7 @@ jobs:
           compress_format: ${{ inputs.compress_format }}
 
       - name: Upload Kernel to Release
-        uses: ncipollo/release-action@main
+        uses: mphin/linux-4.4.60@master
         if: ${{ env.PACKAGED_STATUS }} == 'success' && !cancelled()
         with:
           tag: kernel_stable
