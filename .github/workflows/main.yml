@@ -25,7 +25,7 @@ on:
         type: choice
         options:
           - 5.4.y
-          - 5.10.y
+          - 4.4.60
           - 5.15.y
           - 6.1.y
           - 6.6.y
@@ -159,5 +159,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
             The kernel can be used to compile Armbian and OpenWrt.
-            The kernel source code comes from: ${{ inputs.kernel_source }}
+            The kernel source code comes from: ${{ inputs. }}
             The kernel compilation toolchain: ${{ inputs.kernel_toolchain }}
